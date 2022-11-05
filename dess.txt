@@ -1,0 +1,59 @@
+                      <StyledTableRow key={data.id}>
+                        <StyledTableCell align="left" component="td" scope="row">
+                          {data?.tourOrderAccompanies.filter((_, index) => index === 0) ? (
+                            <img src={IconBackRow} alt="primary-icon-back" />
+                          ) : (
+                            <img src={IconBack} alt="primary-icon-back" />
+                          )}
+                        </StyledTableCell>
+                        <StyledTableCell align="left" component="th" scope="row">
+                          <div className="text-decoration">{index + 1}</div>
+                        </StyledTableCell>
+                        <StyledTableCell align="left" className="max-width-120 text-decoration">
+                          {data?.tourOrderAccompanies.filter((_, index) => index === 0) ? (
+                            <div className="max-width-120">{data.orderNo}</div>
+                          ) : (
+                            <div className="max-width-120">""</div>
+                          )}
+                        </StyledTableCell>
+                        <StyledTableCell
+                          align="left"
+                          className="max-width-120"
+                          tooltip={data.membershipCode}
+                        >
+                          <div className="max-width-120">{data.membershipCode}</div>
+                        </StyledTableCell>
+                        {data.tourOrderAccompanies.length > 0 &&
+                          data.tourOrderAccompanies.map(
+                            (item: IArrayTourOrderAccompanies, index: number) => (
+                              <>
+                                <StyledTableCell
+                                  align="left"
+                                  className="max-width-120 text-decoration"
+                                  tooltip={item.fullName}
+                                >
+                                  {item.fullName}
+                                </StyledTableCell>
+                                <StyledTableCell
+                                  align="left"
+                                  className="max-width-120"
+                                  tooltip={item.furigana}
+                                >
+                                  {item.furigana}
+                                </StyledTableCell>
+                                <StyledTableCell align="left" className="max-width-120">
+                                  {item.room}
+                                </StyledTableCell>
+                                <StyledTableCell align="left" className="max-width-120">
+                                  {item.selectedSeat}
+                                </StyledTableCell>
+                                <StyledTableCell align="left" className="max-width-120">
+                                  {item.nameOption}
+                                </StyledTableCell>
+                                <StyledTableCell align="left" className="max-width-120">
+                                  {item.memo}
+                                </StyledTableCell>
+                              </>
+                            )
+                          )}
+                      </StyledTableRow>

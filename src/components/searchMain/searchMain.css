@@ -1,0 +1,8 @@
+.flex-b {
+    display: flex;
+    align-items: center;
+}
+
+.p-item{
+    padding: 0 10px 0 0;
+}

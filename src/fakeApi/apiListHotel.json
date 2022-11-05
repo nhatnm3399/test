@@ -1,0 +1,21 @@
+
+[
+    {
+        "phone": "387098562",
+        "id": 11,
+        "title": "Hotel Sông Hàn",
+        "address": "133 Dương Đình Nghệ, An Hải Bắc, Sơn Trà, Da Nang",
+        "image": "https://cf.bstatic.com/xdata/images/hotel/square200/400243095.jpg?k=dc3a55cab11193f26d8aef7fb9ac09e036959401365631be0aaf885dab31d824&o=",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "start_point": "0"
+    },
+    {
+        "phone": "387098562",
+        "id": 10,
+        "title": "Hotel Cầu Rồng",
+        "address": "133 Nguyễn Hoàn, Hòa Quý, Ngu Hanh Son, Da Nang",
+        "image": "https://cf.bstatic.com/xdata/images/hotel/square200/400243095.jpg?k=dc3a55cab11193f26d8aef7fb9ac09e036959401365631be0aaf885dab31d824&o=",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "start_point": "8"
+    }
+]
